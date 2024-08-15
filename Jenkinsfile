@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Code Fetch'){
 	        steps{
-	            echo 'Hello from Jenkins'
+	            git url: 'https://github.com/Mustakim4/cicd_with_docker.git', branch: 'main'
             }            
         }
-            stage('Build'){
-	            steps{
-	            echo 'Hello from Jenkins'
+        stage('Build'){
+	        steps{
+	            sh 'npm build'
 	        }            
         }
         stage('Test'){
