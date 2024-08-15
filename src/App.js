@@ -7,7 +7,11 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
+<<<<<<< HEAD
 	  This is the changed from app.js
+=======
+	  This is react app
+>>>>>>> 4e5283b (changed in app.js)
         </p>
         <a
           className="App-link"
